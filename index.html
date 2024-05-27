@@ -11,9 +11,24 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #body-first{
+        margin: auto;
+      }
+    </style>
   </head>
-  <body class="">
-    <header></header>
+  <body id="body-first" class="max-w-[1800px] mx-0">
+    <header class="mx-10 mt-6">
+      <div class="flex justify-between navbar bg-base-100 border rounded-lg bg-sky-100">
+        <div class="grid grid-cols-1 pt-1 ml-6">
+          <p class="text-3xl font-extrabold">Interactive</p>
+          <p class="text-2xl">Geometry Genius</p>
+        </div>
+        <div class="flex-none">
+          <button class="btn w-28 mr-6 text-xl font-bold bg-sky-700">Blog</button>
+        </div>
+      </div>
+    </header>
     <main class="mx-6">
       <!-- Main content container -->
       <div class="flex justify-around space-x-10 mt-8">
@@ -180,55 +195,88 @@
             </div>
           </div>
         </div>
-        <!-- area calculation -->
 
-        <div class="w-[430px] border-[8px] m-6 border-gray-400 rounded-lg">
+                <!-- area calculation -->
+
+        <div class="w-[440px] border-[8px] pt-2 px-4 m-6 border-gray-200 rounded-lg">
           <h3 class="text-3xl text-center p-6 font-extrabold">
             Area Calculation
           </h3>
 
           <!-- Triangle Area -->
-          <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold">
-              # Area of the Triangle is:
-              <span id="triangle-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+          <div class="flex pt-6">
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Rectangle Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="triangle-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
           <!-- Rectangle Area -->
-          <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold">
-              # Area of the Rectangle is:
-              <span id="rectangle-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+          <div class="flex pt-6">
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Rectangle Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="rectangle-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
           <!-- Parallelogram Area -->
           <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold"> 
-              # Area of the Parallelogram is:
-              <span id="parallelogram-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Parallelogram Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="parellelogram-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
           <!-- Rhombus Area -->
           <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold">
-              # Area of the Rhombus is:
-              <span id="rhombus-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Rhombus Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="rhombus-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
           <!-- Pentagon Area -->
           <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold">
-              # Area of the Pentagon is:
-              <span id="pentagon-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Pentagon Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="pentagon-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
           <!-- Ellipse Area -->
-          <div class="flex pt-10">
-            <p class="text-2xl p-4 font-bold">
-              # Area of the Ellipse is:
-              <span id="ellipse-area" class="font-bold"></span> cm<sub>2</sub>
-            </p>
+          <div class="flex pt-10 ">
+            <div class="space-x-2 text-2xl font-bold ">
+              <div class="">
+                <p class="pb-3"># Ellipse Area:</p> 
+                <div class="ml-5 flex space-x-3">
+                  <p id="ellipse-area" class="border h-12 w-80 pt-2 pl-2 rounded-lg border-gray-100"></p>
+                  <p><span class="font-bold">cm<sub>2</sub></span></p>
+                </div> 
+              </div>
+            </div>
           </div>
+
+
         </div>
       </div>
     </main>
